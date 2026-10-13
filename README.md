@@ -6,6 +6,10 @@ Herald turns Ring doorbell and camera events into alerts people can see, hear or
 
 Built for the Ring track of the Amazon "Build, Ship, Shape" hackathon.
 
+**[Watch the demo (2:43)](https://youtu.be/aYE5M2RCo7U)** · **[Try it live](https://herald-q9xx.onrender.com/)**
+
+The live site runs Herald's simulator: choose who uses the screen, press **Doorbell press**, and a signed webhook goes through the same path a real Ring delivery takes. Live view needs a Ring access token, and Playground tokens last only 30 minutes, so the live site doesn't hold one; live view is shown in the demo.
+
 ## What it does
 
 - **One event, every sense.** When Ring reports a doorbell press, a person, a package, a vehicle, movement, or the camera going offline, every open Herald screen responds in the ways its user can perceive:
