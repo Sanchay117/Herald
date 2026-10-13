@@ -1,0 +1,126 @@
+@import 'tailwindcss';
+
+/*
+ * Text colours meet WCAG AAA (7:1) on both canvas and surface, in light and dark.
+ * Borders and the focus ring meet 3:1 (WCAG 1.4.11) so every control's edge is visible.
+ */
+:root {
+  --canvas: #f4f4f2;
+  --surface: #ffffff;
+  --ink: #0b0b0c;
+  --muted: #3d3d45;
+  --line: #8a8a93;
+  --accent: #1e40af;
+  --accent-ink: #ffffff;
+  --focus: #1e40af;
+  --ok: #14532d;
+  --warn: #7c2d12;
+  --bad: #991b1b;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --canvas: #0b0c0f;
+    --surface: #15171c;
+    --ink: #f5f5f4;
+    --muted: #c7c7cf;
+    --line: #6b7280;
+    --accent: #93c5fd;
+    --accent-ink: #0b1220;
+    --focus: #ffd166;
+    --ok: #4ade80;
+    --warn: #fbbf24;
+    --bad: #fca5a5;
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --font-sans: var(--font-atkinson), ui-sans-serif, system-ui, sans-serif;
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-ok: var(--ok);
+  --color-warn: var(--warn);
+  --color-bad: var(--bad);
+}
+
+/* 18px base that still scales with the browser's font-size setting. */
+html {
+  font-size: 112.5%;
+}
+
+body {
+  background: var(--canvas);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+/* On an alert colour the theme's focus colour can vanish (yellow on amber), so draw it in the
+   alert's ink colour, which the contrast check holds to 7:1 against every alert colour. */
+.alert-surface :focus-visible,
+.alert-surface:focus-visible {
+  outline-color: currentColor;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 60;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 700;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+/*
+ * Alert flash. Only the margins pulse: a dark layer fades in and out behind the content.
+ * Each change takes 667 ms, about 0.75 full flashes a second, far below WCAG 2.3.1's three.
+ * Six changes (4 s), then it holds the full colour. The text sits on a solid panel of the
+ * same colour, so its contrast never drops during the pulse.
+ */
+.herald-flash {
+  background: var(--flash-bg);
+  isolation: isolate;
+}
+
+.herald-flash::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #000;
+  opacity: 0;
+  pointer-events: none;
+  animation: herald-pulse 667ms ease-in-out 6 alternate;
+}
+
+.herald-flash-panel {
+  background: var(--flash-bg);
+}
+
+@keyframes herald-pulse {
+  to {
+    opacity: 0.45;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .herald-flash::before {
+    animation: none;
+  }
+}

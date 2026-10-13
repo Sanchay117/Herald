@@ -1,0 +1,34 @@
+{
+  "name": "ring-kit",
+  "version": "0.1.0",
+  "description": "Typed, dependency-free client for the Ring Partner API, plus webhook signature verification and a signed webhook simulator.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "~5.9.3"
+  },
+  "keywords": [
+    "ring",
+    "ring-partner-api",
+    "amazon",
+    "webhooks",
+    "whep",
+    "webrtc"
+  ]
+}
