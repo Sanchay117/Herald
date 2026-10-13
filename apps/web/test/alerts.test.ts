@@ -2,7 +2,7 @@ import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { buildWebhookPayload } from 'ring-kit'
 import { ALERT_STYLE } from '../lib/alert-style.ts'
-import { alertFromWebhook, meetsPriority, type AlertKind } from '../lib/alerts.ts'
+import { ARMED_PHRASE, alertFromWebhook, meetsPriority, spokenPhrases, testAlert, type AlertKind } from '../lib/alerts.ts'
 
 const DEVICE = 'ava1.ring.device.TEST'
 // The Ring docs' example: epoch milliseconds for 2026-08-14 08:53:16 UTC.
@@ -93,6 +93,33 @@ test('meetsPriority: urgent always interrupts, info only when asked for everythi
   assert.ok(!meetsPriority('normal', 'urgent'))
   assert.ok(!meetsPriority('info', 'normal'))
   assert.ok(meetsPriority('info', 'info'))
+})
+
+test('the speech route can voice every sentence Herald says, for any door label', () => {
+  for (const doorLabel of ['front door', 'back gate']) {
+    const phrases = spokenPhrases(doorLabel)
+    const events = [
+      { type: 'button_press' },
+      ...['human', 'package_delivery', 'vehicle', 'motion', 'other_motion', 'animal'].map((subType) => ({ type: 'motion_detected' as const, subType })),
+      { type: 'device_offline' },
+      { type: 'device_online' },
+    ] as const
+    for (const event of events) {
+      const alert = alertFromWebhook(buildWebhookPayload({ ...event, deviceId: DEVICE }), { ...OPTIONS, doorLabel })
+      assert.ok(alert && phrases.includes(alert.spoken), `${doorLabel}: ${alert?.spoken}`)
+    }
+    assert.ok(phrases.includes(testAlert(doorLabel, TS).spoken))
+    assert.ok(phrases.includes(ARMED_PHRASE))
+  }
+})
+
+test('the test alert is a doorbell press that says it is a test, in words and on screen', () => {
+  const alert = testAlert('front door', TS)
+  assert.equal(alert.kind, 'doorbell')
+  assert.equal(alert.priority, 'urgent')
+  assert.equal(alert.spoken, 'This is a test. Doorbell. Someone is at the front door.')
+  assert.equal(alert.detail, 'This is a test. Someone is at the front door.')
+  assert.equal(alert.simulated, true)
 })
 
 test('every kind of alert has its own vibration rhythm that can be felt', () => {

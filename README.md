@@ -11,7 +11,7 @@ Built for the Ring track of the Amazon "Build, Ship, Shape" hackathon.
 - **One event, every sense.** When Ring reports a doorbell press, a person, a package, a vehicle, movement, or the camera going offline, every open Herald screen responds in the ways its user can perceive:
   - a full-screen colour flash that stays until dismissed
   - a vibration rhythm that's different for each kind of event
-  - spoken alerts
+  - spoken alerts in a natural voice (Deepgram Aura-2, with the browser's own voice as a fallback)
   - screen-reader announcements, which also reach refreshable braille displays
 - **Set up per screen.** Each phone, tablet, laptop or TV picks a profile: Deaf or hard of hearing, Blind or low vision, Deafblind, or custom. Settings stay on that device, so a wall tablet and a phone in the same home can behave differently.
 - **Only what matters interrupts.** Doorbell presses and camera problems always interrupt. People and packages interrupt by default. Vehicles and general movement go into History and interrupt only if you ask for everything.
@@ -52,13 +52,14 @@ flowchart LR
   wh --> bus[("In-memory alert bus")]
   bus -- "Server-Sent Events" --> screens["Every open screen: phone, tablet, TV"]
   screens --> out["Flash, vibration, speech, screen reader"]
+  screens -- "sentence to say" --> speech["/api/speech: Deepgram, cached"]
   browser["Browser"] -- "SDP offer" --> relay["/api/ring/stream: adds the token"]
   relay -- "WHEP" --> ring
 ```
 
 1. Ring POSTs a webhook to `/api/webhook`. Herald checks the `X-Signature` HMAC-SHA256 over the raw bytes before parsing anything, drops duplicates by `request_id` (Ring retries failed deliveries), turns the event into an alert, and answers well inside Ring's 5-second limit.
 2. The alert goes onto an in-memory bus and out to every open screen over Server-Sent Events. A screen that connects later gets recent history without replaying the alerts.
-3. Each screen applies its own profile and priority filter and fires its outputs.
+3. Each screen applies its own profile and priority filter and fires its outputs. To speak, it asks `/api/speech` for the sentence. The server synthesises each of Herald's sentences once with Deepgram and serves it from memory after that (it warms them all when the first screen connects), so the key stays on the server. If there's no key, no answer within 2.5 seconds, or the browser won't play the audio, the browser's own voice says it instead.
 4. For live view, the browser creates a WebRTC offer with one receive-only video track, as Ring documents. Herald's server relays it to Ring's WHEP endpoint with the token, so the token never reaches the browser.
 
 ### Ring APIs used
@@ -106,6 +107,7 @@ Set these in `apps/web/.env.local`.
 | `RING_ACCESS_TOKEN` | empty | Ring API token. Use a Playground token for development. |
 | `RING_WEBHOOK_SIGNING_KEY` | random per run while the simulator is on | The HMAC key Ring signs webhooks with. Required in production. |
 | `HERALD_DOOR_LABEL` | `front door` | What alerts call the door: "Someone is at the front door." |
+| `DEEPGRAM_API_KEY` | empty | Herald's voice. Alerts are spoken with Deepgram Aura-2 (Orion). Empty: each browser's built-in voice. |
 | `HERALD_SIMULATOR` | on in development, off in production | `on` or `off`. Shows the simulator and enables `/api/simulate`. |
 | `HERALD_PASSWORD` | unset | One password for the whole app (HTTP Basic, any user name). Set it on any server reachable from the internet. |
 
@@ -129,7 +131,7 @@ npm run typecheck
 npm run check:contrast
 ```
 
-46 unit tests run on Node's built-in test runner: 27 for ring-kit and 19 for the web app. They cover webhook signing and verification (tampered bodies, re-serialized JSON, wrong keys, malformed headers), the simulator's payloads, the API client's redirects and errors, the event-to-alert mapping, preference sanitising, distinct vibration rhythms, and the password gate.
+52 unit tests run on Node's built-in test runner: 27 for ring-kit and 25 for the web app. They cover webhook signing and verification (tampered bodies, re-serialized JSON, wrong keys, malformed headers), the simulator's payloads, the API client's redirects and errors, the event-to-alert mapping, preference sanitising, distinct vibration rhythms, the password gate, and Herald's voice (every alert sentence can be spoken, each is synthesised once, failures aren't cached).
 
 ## Project layout
 
@@ -139,6 +141,7 @@ apps/web/              Herald (Next.js)
   app/api/webhook/       Ring webhook receiver
   app/api/events/        Server-Sent Events to every open screen
   app/api/simulate/      Signed test webhooks
+  app/api/speech/        Herald's voice (Deepgram, cached per sentence)
   app/api/ring/          Devices, live view relay, snapshots
   hooks/                 Alert stream, outputs (flash, vibration, speech, live regions), live view, preferences
   components/            The interface
@@ -153,6 +156,7 @@ apps/web/              Herald (Next.js)
 - Webhooks are verified with HMAC-SHA256 over the exact bytes received, compared in constant time, before anything is parsed. Repeated deliveries are dropped by `request_id`.
 - Media downloads follow Ring's 303 redirect without the `Authorization` header, so the token never goes to the storage host. Ending a live session refuses any URL that isn't on Ring's API host.
 - `HERALD_PASSWORD` protects every page and API route except the webhook.
+- `/api/speech` voices only Herald's own alert sentences, so it can't be used as a free text-to-speech service. The sentence (for example "Doorbell. Someone is at the front door.") is the only thing sent to Deepgram: no video, images or account details.
 
 ## Limitations and next steps
 
@@ -165,6 +169,7 @@ apps/web/              Herald (Next.js)
 
 - [ring-api-helloworld](https://github.com/AmazonAppDev/ring-api-helloworld) was a reference for the Ring API. Herald doesn't copy its code; [FRICTION_LOG.md](FRICTION_LOG.md) explains where Herald departs from it and why.
 - Icons from [Lucide](https://lucide.dev). Font: Atkinson Hyperlegible by the Braille Institute. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+- Herald's voice: [Deepgram](https://deepgram.com) Aura-2, when a key is configured.
 
 ## License
 

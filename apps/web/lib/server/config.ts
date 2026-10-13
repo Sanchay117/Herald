@@ -24,6 +24,11 @@ export function webhookSigningKey(): string | null {
   return singleton('devSigningKey', () => randomBytes(32).toString('hex'))
 }
 
+/** Deepgram key for Herald's voice. Without one, each browser speaks alerts with its own built-in voice. */
+export function deepgramKey(): string {
+  return (process.env.DEEPGRAM_API_KEY || process.env.DEEPGRAM_KEY || '').trim()
+}
+
 export function doorLabel(): string {
   return process.env.HERALD_DOOR_LABEL?.trim() || 'front door'
 }

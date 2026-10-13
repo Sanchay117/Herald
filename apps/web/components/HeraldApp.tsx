@@ -7,7 +7,7 @@ import { useAlertStream } from '@/hooks/useAlertStream'
 import { useNow } from '@/hooks/useNow'
 import { usePrefs } from '@/hooks/usePrefs'
 import { useRingStatus } from '@/hooks/useRingStatus'
-import type { Alert } from '@/lib/alerts'
+import { testAlert } from '@/lib/alerts'
 import { PROFILES, profilePatch, type Profile } from '@/lib/prefs'
 import { AlertFeed } from './AlertFeed'
 import { ArmBanner } from './ArmBanner'
@@ -54,23 +54,7 @@ export function HeraldApp({ door, simulator }: { door: string; simulator: boolea
     focusDoorStatus()
   }, [arm])
 
-  const testAlert = useCallback(() => {
-    const at = Date.now()
-    const test: Alert = {
-      id: `test-${at}`,
-      eventId: `test-${at}`,
-      kind: 'doorbell',
-      priority: 'urgent',
-      headline: 'Doorbell',
-      detail: `This is a test. Someone is at the ${door}.`,
-      spoken: `This is a test. Doorbell. Someone is at the ${door}.`,
-      deviceId: 'test',
-      occurredAt: at,
-      receivedAt: at,
-      simulated: true,
-    }
-    outputs.present(test)
-  }, [door, outputs])
+  const tryTestAlert = useCallback(() => outputs.present(testAlert(door, Date.now())), [door, outputs])
 
   const needsArming = loaded && (prefs.speak || prefs.vibrate) && !outputs.armed
 
@@ -110,7 +94,7 @@ export function HeraldApp({ door, simulator }: { door: string; simulator: boolea
             <div className="min-w-0 space-y-6">
               <AlertFeed alerts={alerts} now={now} />
               {simulator && <SimulatorPanel />}
-              <PrefsPanel prefs={prefs} onChange={update} onTest={testAlert} />
+              <PrefsPanel prefs={prefs} onChange={update} onTest={tryTestAlert} />
             </div>
           </div>
         </main>

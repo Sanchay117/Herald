@@ -1,9 +1,10 @@
 'use client'
 
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { meetsPriority, type Alert } from '@/lib/alerts'
+import { ARMED_PHRASE, meetsPriority, type Alert } from '@/lib/alerts'
 import { ALERT_STYLE } from '@/lib/alert-style'
 import type { Prefs } from '@/lib/prefs'
+import { useVoice } from './useVoice'
 
 /**
  * Turns an alert into whatever this screen's person can perceive: speech, vibration,
@@ -17,6 +18,7 @@ export function useAlertOutputs(prefs: Prefs) {
   const [polite, setPolite] = useState('')
   const announceTimer = useRef<number | undefined>(undefined)
   const returnFocus = useRef<HTMLElement | null>(null)
+  const { say, unlock } = useVoice(prefs.voiceRate)
 
   useEffect(() => {
     const activation = navigator.userActivation
@@ -30,6 +32,7 @@ export function useAlertOutputs(prefs: Prefs) {
     function onInteract(e: Event) {
       // Count only input the browser itself treats as user activation.
       if (activation ? !activation.hasBeenActive : e instanceof KeyboardEvent && e.key === 'Escape') return
+      unlock()
       setArmed(true)
       stopListening()
     }
@@ -40,7 +43,7 @@ export function useAlertOutputs(prefs: Prefs) {
     window.addEventListener('click', onInteract)
     window.addEventListener('keydown', onInteract)
     return stopListening
-  }, [])
+  }, [unlock])
 
   useEffect(() => () => window.clearTimeout(announceTimer.current), [])
 
@@ -51,18 +54,6 @@ export function useAlertOutputs(prefs: Prefs) {
     returnFocus.current = null
     if (target?.isConnected) target.focus()
   }, [flashAlert])
-
-  const speak = useCallback(
-    (text: string, interrupt: boolean) => {
-      if (!('speechSynthesis' in window)) return
-      if (interrupt) window.speechSynthesis.cancel()
-      const utterance = new SpeechSynthesisUtterance(text)
-      utterance.rate = prefs.voiceRate
-      utterance.lang = document.documentElement.lang || 'en'
-      window.speechSynthesis.speak(utterance)
-    },
-    [prefs.voiceRate],
-  )
 
   const vibrate = useCallback((pattern: number[]) => {
     if ('vibrate' in navigator) navigator.vibrate(pattern)
@@ -90,9 +81,9 @@ export function useAlertOutputs(prefs: Prefs) {
         setFlashAlert(alert)
       }
       if (prefs.vibrate) vibrate(ALERT_STYLE[alert.kind].vibration)
-      if (prefs.speak) speak(alert.spoken, urgent)
+      if (prefs.speak) say(alert.spoken, urgent)
     },
-    [prefs, announce, vibrate, speak],
+    [prefs, announce, vibrate, say],
   )
 
   const notify = useCallback(
@@ -103,10 +94,11 @@ export function useAlertOutputs(prefs: Prefs) {
   )
 
   const arm = useCallback(() => {
+    unlock()
     setArmed(true)
-    if (prefs.speak) speak('Herald alerts are on.', true)
+    if (prefs.speak) say(ARMED_PHRASE, true)
     if (prefs.vibrate) vibrate([80])
-  }, [prefs.speak, prefs.vibrate, speak, vibrate])
+  }, [prefs.speak, prefs.vibrate, say, unlock, vibrate])
 
   const dismissFlash = useCallback(() => setFlashAlert(null), [])
 

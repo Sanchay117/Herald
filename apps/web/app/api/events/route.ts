@@ -1,5 +1,6 @@
 import type { NextRequest } from 'next/server'
 import { recentAlerts, subscribe, type BusMessage } from '@/lib/server/bus'
+import { warmSpeech } from '@/lib/server/voice'
 
 // Server-Sent Events: every open Herald screen (phone, laptop, TV) gets alerts the moment the webhook lands.
 //   event: snapshot      data: Alert[]           (on connect; never re-triggers outputs)
@@ -11,6 +12,8 @@ export const dynamic = 'force-dynamic'
 const HEARTBEAT_MS = 15_000
 
 export async function GET(request: NextRequest) {
+  // A screen is listening, so it may need Herald's voice soon.
+  warmSpeech()
   const encoder = new TextEncoder()
   let cleanup = () => {}
 
