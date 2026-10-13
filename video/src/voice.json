@@ -1,0 +1,1850 @@
+[
+ {
+  "id": "cold-deaf",
+  "voice": "narrator",
+  "text": "If you're Deaf, this is what a doorbell sounds like.",
+  "duration": 3.72,
+  "words": [
+   {
+    "w": "If",
+    "s": 0,
+    "e": 0.4
+   },
+   {
+    "w": "you're",
+    "s": 0.4,
+    "e": 0.72
+   },
+   {
+    "w": "Deaf,",
+    "s": 0.72,
+    "e": 1.36
+   },
+   {
+    "w": "this",
+    "s": 1.92,
+    "e": 2.16
+   },
+   {
+    "w": "is",
+    "s": 2.16,
+    "e": 2.24
+   },
+   {
+    "w": "what",
+    "s": 2.24,
+    "e": 2.48
+   },
+   {
+    "w": "a",
+    "s": 2.48,
+    "e": 2.56
+   },
+   {
+    "w": "doorbell",
+    "s": 2.56,
+    "e": 2.96
+   },
+   {
+    "w": "sounds",
+    "s": 2.96,
+    "e": 3.36
+   },
+   {
+    "w": "like.",
+    "s": 3.36,
+    "e": 3.68
+   }
+  ]
+ },
+ {
+  "id": "cold-blind",
+  "voice": "narrator",
+  "text": "If you're blind, it sounds like this.",
+  "duration": 2.56,
+  "words": [
+   {
+    "w": "If",
+    "s": 0.08,
+    "e": 0.48
+   },
+   {
+    "w": "you're",
+    "s": 0.48,
+    "e": 0.72
+   },
+   {
+    "w": "blind,",
+    "s": 0.72,
+    "e": 1.44
+   },
+   {
+    "w": "it",
+    "s": 1.44,
+    "e": 1.68
+   },
+   {
+    "w": "sounds",
+    "s": 1.68,
+    "e": 1.92
+   },
+   {
+    "w": "like",
+    "s": 1.92,
+    "e": 2.16
+   },
+   {
+    "w": "this.",
+    "s": 2.16,
+    "e": 2.48
+   }
+  ]
+ },
+ {
+  "id": "cold-alert",
+  "voice": "herald",
+  "text": "Doorbell. Someone is at the front door.",
+  "duration": 3.04,
+  "words": [
+   {
+    "w": "Doorbell.",
+    "s": 0.24,
+    "e": 1.2
+   },
+   {
+    "w": "Someone",
+    "s": 1.52,
+    "e": 1.84
+   },
+   {
+    "w": "is",
+    "s": 1.84,
+    "e": 2.08
+   },
+   {
+    "w": "at",
+    "s": 2.08,
+    "e": 2.32
+   },
+   {
+    "w": "the",
+    "s": 2.32,
+    "e": 2.4
+   },
+   {
+    "w": "front",
+    "s": 2.4,
+    "e": 2.64
+   },
+   {
+    "w": "door.",
+    "s": 2.64,
+    "e": 2.96
+   }
+  ]
+ },
+ {
+  "id": "cold-deafblind",
+  "voice": "narrator",
+  "text": "And if you're Deafblind, it feels like this.",
+  "duration": 3,
+  "words": [
+   {
+    "w": "And",
+    "s": 0.16,
+    "e": 0.4
+   },
+   {
+    "w": "if",
+    "s": 0.4,
+    "e": 0.64
+   },
+   {
+    "w": "you're",
+    "s": 0.64,
+    "e": 0.8
+   },
+   {
+    "w": "Deafblind,",
+    "s": 1.24,
+    "e": 1.84
+   },
+   {
+    "w": "it",
+    "s": 1.84,
+    "e": 2
+   },
+   {
+    "w": "feels",
+    "s": 2,
+    "e": 2.32
+   },
+   {
+    "w": "like",
+    "s": 2.32,
+    "e": 2.56
+   },
+   {
+    "w": "this.",
+    "s": 2.56,
+    "e": 2.88
+   }
+  ]
+ },
+ {
+  "id": "title",
+  "voice": "narrator",
+  "text": "This is Herald. Your Ring doorbell, for every sense.",
+  "duration": 3,
+  "words": [
+   {
+    "w": "This",
+    "s": 0,
+    "e": 0.24
+   },
+   {
+    "w": "is",
+    "s": 0.24,
+    "e": 0.4
+   },
+   {
+    "w": "Herald.",
+    "s": 0.72,
+    "e": 1.2
+   },
+   {
+    "w": "Your",
+    "s": 1.2,
+    "e": 1.44
+   },
+   {
+    "w": "Ring",
+    "s": 1.44,
+    "e": 1.68
+   },
+   {
+    "w": "doorbell,",
+    "s": 1.68,
+    "e": 2.08
+   },
+   {
+    "w": "for",
+    "s": 2.08,
+    "e": 2.4
+   },
+   {
+    "w": "every",
+    "s": 2.4,
+    "e": 2.64
+   },
+   {
+    "w": "sense.",
+    "s": 2.64,
+    "e": 2.96
+   }
+  ]
+ },
+ {
+  "id": "why",
+  "voice": "narrator",
+  "text": "430 million people live with disabling hearing loss, and 43 million are blind. But a doorbell is made for ears, and a camera for eyes.",
+  "duration": 9.758,
+  "words": [
+   {
+    "w": "430",
+    "s": 0,
+    "e": 0.32
+   },
+   {
+    "w": "million",
+    "s": 0.32,
+    "e": 0.56
+   },
+   {
+    "w": "people",
+    "s": 0.56,
+    "e": 0.72
+   },
+   {
+    "w": "live",
+    "s": 0.72,
+    "e": 1.04
+   },
+   {
+    "w": "with",
+    "s": 1.04,
+    "e": 1.76
+   },
+   {
+    "w": "disabling",
+    "s": 1.76,
+    "e": 2.16
+   },
+   {
+    "w": "hearing",
+    "s": 2.16,
+    "e": 2.32
+   },
+   {
+    "w": "loss,",
+    "s": 2.32,
+    "e": 2.8
+   },
+   {
+    "w": "and",
+    "s": 2.8,
+    "e": 3.84
+   },
+   {
+    "w": "43",
+    "s": 3.84,
+    "e": 4.08
+   },
+   {
+    "w": "million",
+    "s": 4.24,
+    "e": 4.64
+   },
+   {
+    "w": "are",
+    "s": 4.64,
+    "e": 5.04
+   },
+   {
+    "w": "blind.",
+    "s": 5.04,
+    "e": 6
+   },
+   {
+    "w": "But",
+    "s": 6.32,
+    "e": 6.48
+   },
+   {
+    "w": "a",
+    "s": 6.48,
+    "e": 6.72
+   },
+   {
+    "w": "doorbell",
+    "s": 6.72,
+    "e": 7.04
+   },
+   {
+    "w": "is",
+    "s": 7.04,
+    "e": 7.28
+   },
+   {
+    "w": "made",
+    "s": 7.28,
+    "e": 7.52
+   },
+   {
+    "w": "for",
+    "s": 7.52,
+    "e": 7.68
+   },
+   {
+    "w": "ears,",
+    "s": 7.68,
+    "e": 8.16
+   },
+   {
+    "w": "and",
+    "s": 8.16,
+    "e": 8.56
+   },
+   {
+    "w": "a",
+    "s": 8.56,
+    "e": 8.72
+   },
+   {
+    "w": "camera",
+    "s": 8.72,
+    "e": 8.96
+   },
+   {
+    "w": "for",
+    "s": 8.96,
+    "e": 9.28
+   },
+   {
+    "w": "eyes.",
+    "s": 9.28,
+    "e": 9.6
+   }
+  ]
+ },
+ {
+  "id": "promise",
+  "voice": "narrator",
+  "text": "This video works with the sound off, or with your eyes closed. So does Herald.",
+  "duration": 4.88,
+  "words": [
+   {
+    "w": "This",
+    "s": 0,
+    "e": 0.48
+   },
+   {
+    "w": "video",
+    "s": 0.48,
+    "e": 0.8
+   },
+   {
+    "w": "works",
+    "s": 0.8,
+    "e": 1.12
+   },
+   {
+    "w": "with",
+    "s": 1.12,
+    "e": 1.28
+   },
+   {
+    "w": "the",
+    "s": 1.28,
+    "e": 1.36
+   },
+   {
+    "w": "sound",
+    "s": 1.36,
+    "e": 1.68
+   },
+   {
+    "w": "off,",
+    "s": 1.68,
+    "e": 2.08
+   },
+   {
+    "w": "or",
+    "s": 2.08,
+    "e": 2.48
+   },
+   {
+    "w": "with",
+    "s": 2.48,
+    "e": 2.64
+   },
+   {
+    "w": "your",
+    "s": 2.64,
+    "e": 2.8
+   },
+   {
+    "w": "eyes",
+    "s": 2.8,
+    "e": 3.12
+   },
+   {
+    "w": "closed.",
+    "s": 3.12,
+    "e": 3.84
+   },
+   {
+    "w": "So",
+    "s": 3.92,
+    "e": 4.08
+   },
+   {
+    "w": "does",
+    "s": 4.08,
+    "e": 4.32
+   },
+   {
+    "w": "Herald.",
+    "s": 4.4,
+    "e": 4.72
+   }
+  ]
+ },
+ {
+  "id": "setup",
+  "voice": "narrator",
+  "text": "Each screen in the home is set up for the person using it: Deaf or hard of hearing, blind or low vision, Deafblind, or a custom mix.",
+  "duration": 8.36,
+  "words": [
+   {
+    "w": "Each",
+    "s": 0,
+    "e": 0.48
+   },
+   {
+    "w": "screen",
+    "s": 0.48,
+    "e": 0.8
+   },
+   {
+    "w": "in",
+    "s": 0.8,
+    "e": 0.96
+   },
+   {
+    "w": "the",
+    "s": 0.96,
+    "e": 1.04
+   },
+   {
+    "w": "home",
+    "s": 1.04,
+    "e": 1.28
+   },
+   {
+    "w": "is",
+    "s": 1.28,
+    "e": 1.52
+   },
+   {
+    "w": "set",
+    "s": 1.52,
+    "e": 1.68
+   },
+   {
+    "w": "up",
+    "s": 1.68,
+    "e": 1.84
+   },
+   {
+    "w": "for",
+    "s": 1.84,
+    "e": 2
+   },
+   {
+    "w": "the",
+    "s": 2,
+    "e": 2.08
+   },
+   {
+    "w": "person",
+    "s": 2.08,
+    "e": 2.32
+   },
+   {
+    "w": "using",
+    "s": 2.32,
+    "e": 2.72
+   },
+   {
+    "w": "it:",
+    "s": 2.72,
+    "e": 3.2
+   },
+   {
+    "w": "Deaf",
+    "s": 3.28,
+    "e": 3.6
+   },
+   {
+    "w": "or",
+    "s": 3.6,
+    "e": 3.84
+   },
+   {
+    "w": "hard",
+    "s": 3.84,
+    "e": 4.08
+   },
+   {
+    "w": "of",
+    "s": 4.08,
+    "e": 4.24
+   },
+   {
+    "w": "hearing,",
+    "s": 4.24,
+    "e": 4.8
+   },
+   {
+    "w": "blind",
+    "s": 4.8,
+    "e": 5.2
+   },
+   {
+    "w": "or",
+    "s": 5.2,
+    "e": 5.44
+   },
+   {
+    "w": "low",
+    "s": 5.44,
+    "e": 5.68
+   },
+   {
+    "w": "vision,",
+    "s": 5.68,
+    "e": 6.24
+   },
+   {
+    "w": "Deafblind,",
+    "s": 6.44,
+    "e": 7.2
+   },
+   {
+    "w": "or",
+    "s": 7.2,
+    "e": 7.36
+   },
+   {
+    "w": "a",
+    "s": 7.36,
+    "e": 7.52
+   },
+   {
+    "w": "custom",
+    "s": 7.52,
+    "e": 7.84
+   },
+   {
+    "w": "mix.",
+    "s": 7.84,
+    "e": 8.24
+   }
+  ]
+ },
+ {
+  "id": "wall",
+  "voice": "narrator",
+  "text": "When someone rings, every open screen responds at once, each in its own way. The TV floods with amber. The laptop speaks. The phone pulses long, long, and its screen reader sends the words to a braille display.",
+  "duration": 14.8,
+  "words": [
+   {
+    "w": "When",
+    "s": 0,
+    "e": 0.32
+   },
+   {
+    "w": "someone",
+    "s": 0.32,
+    "e": 0.72
+   },
+   {
+    "w": "rings,",
+    "s": 0.72,
+    "e": 1.44
+   },
+   {
+    "w": "every",
+    "s": 1.52,
+    "e": 1.92
+   },
+   {
+    "w": "open",
+    "s": 1.92,
+    "e": 2.24
+   },
+   {
+    "w": "screen",
+    "s": 2.24,
+    "e": 2.64
+   },
+   {
+    "w": "responds",
+    "s": 2.64,
+    "e": 3.12
+   },
+   {
+    "w": "at",
+    "s": 3.12,
+    "e": 3.36
+   },
+   {
+    "w": "once,",
+    "s": 3.36,
+    "e": 4
+   },
+   {
+    "w": "each",
+    "s": 4.08,
+    "e": 4.32
+   },
+   {
+    "w": "in",
+    "s": 4.32,
+    "e": 4.56
+   },
+   {
+    "w": "its",
+    "s": 4.56,
+    "e": 4.72
+   },
+   {
+    "w": "own",
+    "s": 4.72,
+    "e": 4.96
+   },
+   {
+    "w": "way.",
+    "s": 4.96,
+    "e": 5.52
+   },
+   {
+    "w": "The",
+    "s": 5.76,
+    "e": 6
+   },
+   {
+    "w": "TV",
+    "s": 6,
+    "e": 6.32
+   },
+   {
+    "w": "floods",
+    "s": 6.32,
+    "e": 6.88
+   },
+   {
+    "w": "with",
+    "s": 6.88,
+    "e": 7.12
+   },
+   {
+    "w": "amber.",
+    "s": 7.12,
+    "e": 7.84
+   },
+   {
+    "w": "The",
+    "s": 7.92,
+    "e": 8.16
+   },
+   {
+    "w": "laptop",
+    "s": 8.16,
+    "e": 8.8
+   },
+   {
+    "w": "speaks.",
+    "s": 8.8,
+    "e": 9.44
+   },
+   {
+    "w": "The",
+    "s": 9.76,
+    "e": 10
+   },
+   {
+    "w": "phone",
+    "s": 10,
+    "e": 10.24
+   },
+   {
+    "w": "pulses",
+    "s": 10.24,
+    "e": 10.72
+   },
+   {
+    "w": "long,",
+    "s": 10.72,
+    "e": 11.28
+   },
+   {
+    "w": "long,",
+    "s": 11.28,
+    "e": 11.68
+   },
+   {
+    "w": "and",
+    "s": 11.68,
+    "e": 11.84
+   },
+   {
+    "w": "its",
+    "s": 11.84,
+    "e": 12.08
+   },
+   {
+    "w": "screen",
+    "s": 12.08,
+    "e": 12.32
+   },
+   {
+    "w": "reader",
+    "s": 12.32,
+    "e": 12.64
+   },
+   {
+    "w": "sends",
+    "s": 12.64,
+    "e": 13.04
+   },
+   {
+    "w": "the",
+    "s": 13.04,
+    "e": 13.2
+   },
+   {
+    "w": "words",
+    "s": 13.2,
+    "e": 13.52
+   },
+   {
+    "w": "to",
+    "s": 13.52,
+    "e": 13.76
+   },
+   {
+    "w": "a",
+    "s": 13.76,
+    "e": 13.92
+   },
+   {
+    "w": "braille",
+    "s": 13.92,
+    "e": 14.24
+   },
+   {
+    "w": "display.",
+    "s": 14.24,
+    "e": 14.64
+   }
+  ]
+ },
+ {
+  "id": "rhythm",
+  "voice": "narrator",
+  "text": "Every kind of event has its own colour and its own rhythm. A person is short, short. A package is short, long.",
+  "duration": 6.84,
+  "words": [
+   {
+    "w": "Every",
+    "s": 0,
+    "e": 0.56
+   },
+   {
+    "w": "kind",
+    "s": 0.56,
+    "e": 0.72
+   },
+   {
+    "w": "of",
+    "s": 0.72,
+    "e": 0.88
+   },
+   {
+    "w": "event",
+    "s": 0.88,
+    "e": 1.2
+   },
+   {
+    "w": "has",
+    "s": 1.2,
+    "e": 1.52
+   },
+   {
+    "w": "its",
+    "s": 1.52,
+    "e": 1.76
+   },
+   {
+    "w": "own",
+    "s": 1.76,
+    "e": 1.92
+   },
+   {
+    "w": "colour",
+    "s": 2,
+    "e": 2.24
+   },
+   {
+    "w": "and",
+    "s": 2.24,
+    "e": 2.48
+   },
+   {
+    "w": "its",
+    "s": 2.48,
+    "e": 2.72
+   },
+   {
+    "w": "own",
+    "s": 2.72,
+    "e": 2.88
+   },
+   {
+    "w": "rhythm.",
+    "s": 2.88,
+    "e": 3.52
+   },
+   {
+    "w": "A",
+    "s": 3.6,
+    "e": 3.84
+   },
+   {
+    "w": "person",
+    "s": 3.84,
+    "e": 4.08
+   },
+   {
+    "w": "is",
+    "s": 4.08,
+    "e": 4.4
+   },
+   {
+    "w": "short,",
+    "s": 4.4,
+    "e": 4.64
+   },
+   {
+    "w": "short.",
+    "s": 4.64,
+    "e": 5.28
+   },
+   {
+    "w": "A",
+    "s": 5.36,
+    "e": 5.52
+   },
+   {
+    "w": "package",
+    "s": 5.52,
+    "e": 5.92
+   },
+   {
+    "w": "is",
+    "s": 5.92,
+    "e": 6.16
+   },
+   {
+    "w": "short,",
+    "s": 6.16,
+    "e": 6.32
+   },
+   {
+    "w": "long.",
+    "s": 6.32,
+    "e": 6.8
+   }
+  ]
+ },
+ {
+  "id": "priority",
+  "voice": "narrator",
+  "text": "And only what matters interrupts. A passing car slips quietly into history, but a package gets a green flash.",
+  "duration": 7.12,
+  "words": [
+   {
+    "w": "And",
+    "s": 0,
+    "e": 0.24
+   },
+   {
+    "w": "only",
+    "s": 0.24,
+    "e": 0.56
+   },
+   {
+    "w": "what",
+    "s": 0.56,
+    "e": 0.8
+   },
+   {
+    "w": "matters",
+    "s": 0.8,
+    "e": 1.12
+   },
+   {
+    "w": "interrupts.",
+    "s": 1.12,
+    "e": 2.16
+   },
+   {
+    "w": "A",
+    "s": 2.16,
+    "e": 2.4
+   },
+   {
+    "w": "passing",
+    "s": 2.4,
+    "e": 2.72
+   },
+   {
+    "w": "car",
+    "s": 2.72,
+    "e": 3.04
+   },
+   {
+    "w": "slips",
+    "s": 3.04,
+    "e": 3.44
+   },
+   {
+    "w": "quietly",
+    "s": 3.44,
+    "e": 3.84
+   },
+   {
+    "w": "into",
+    "s": 3.84,
+    "e": 4.16
+   },
+   {
+    "w": "history,",
+    "s": 4.16,
+    "e": 4.96
+   },
+   {
+    "w": "but",
+    "s": 5.2,
+    "e": 5.36
+   },
+   {
+    "w": "a",
+    "s": 5.36,
+    "e": 5.52
+   },
+   {
+    "w": "package",
+    "s": 5.52,
+    "e": 5.84
+   },
+   {
+    "w": "gets",
+    "s": 5.84,
+    "e": 6.16
+   },
+   {
+    "w": "a",
+    "s": 6.16,
+    "e": 6.32
+   },
+   {
+    "w": "green",
+    "s": 6.32,
+    "e": 6.56
+   },
+   {
+    "w": "flash.",
+    "s": 6.56,
+    "e": 6.96
+   }
+  ]
+ },
+ {
+  "id": "live",
+  "voice": "narrator",
+  "text": "To see who's there, live view streams straight from the Ring camera over WebRTC, and the Ring token never leaves Herald's server.",
+  "duration": 8.554,
+  "words": [
+   {
+    "w": "To",
+    "s": 0,
+    "e": 0.4
+   },
+   {
+    "w": "see",
+    "s": 0.4,
+    "e": 0.64
+   },
+   {
+    "w": "who's",
+    "s": 0.64,
+    "e": 0.96
+   },
+   {
+    "w": "there,",
+    "s": 0.96,
+    "e": 1.52
+   },
+   {
+    "w": "live",
+    "s": 1.6,
+    "e": 2
+   },
+   {
+    "w": "view",
+    "s": 2,
+    "e": 2.32
+   },
+   {
+    "w": "streams",
+    "s": 2.32,
+    "e": 2.8
+   },
+   {
+    "w": "straight",
+    "s": 2.8,
+    "e": 3.36
+   },
+   {
+    "w": "from",
+    "s": 3.36,
+    "e": 3.52
+   },
+   {
+    "w": "the",
+    "s": 3.52,
+    "e": 3.76
+   },
+   {
+    "w": "Ring",
+    "s": 3.76,
+    "e": 4.08
+   },
+   {
+    "w": "camera",
+    "s": 4.08,
+    "e": 4.48
+   },
+   {
+    "w": "over",
+    "s": 4.448,
+    "e": 4.816
+   },
+   {
+    "w": "WebRTC,",
+    "s": 4.816,
+    "e": 5.184
+   },
+   {
+    "w": "and",
+    "s": 5.184,
+    "e": 5.92
+   },
+   {
+    "w": "the",
+    "s": 5.92,
+    "e": 6
+   },
+   {
+    "w": "Ring",
+    "s": 6,
+    "e": 6.16
+   },
+   {
+    "w": "token",
+    "s": 6.16,
+    "e": 6.4
+   },
+   {
+    "w": "never",
+    "s": 6.4,
+    "e": 6.8
+   },
+   {
+    "w": "leaves",
+    "s": 6.8,
+    "e": 7.2
+   },
+   {
+    "w": "Herald's",
+    "s": 7.2,
+    "e": 7.52
+   },
+   {
+    "w": "server.",
+    "s": 7.52,
+    "e": 8.48
+   }
+  ]
+ },
+ {
+  "id": "safe",
+  "voice": "narrator",
+  "text": "Accessibility is the spec, not polish. The flash pulses less than once a second, far below the safety limit of three, and holds steady if you reduce motion. Focus moves to Dismiss, then back to where you were. All text meets WCAG AAA contrast, and a script checks every colour pair.",
+  "duration": 21.007,
+  "words": [
+   {
+    "w": "Accessibility",
+    "s": 0.16,
+    "e": 0.96
+   },
+   {
+    "w": "is",
+    "s": 0.96,
+    "e": 1.2
+   },
+   {
+    "w": "the",
+    "s": 1.2,
+    "e": 1.44
+   },
+   {
+    "w": "spec,",
+    "s": 1.44,
+    "e": 2.08
+   },
+   {
+    "w": "not",
+    "s": 2.08,
+    "e": 2.4
+   },
+   {
+    "w": "polish.",
+    "s": 2.4,
+    "e": 3.12
+   },
+   {
+    "w": "The",
+    "s": 3.52,
+    "e": 3.76
+   },
+   {
+    "w": "flash",
+    "s": 3.76,
+    "e": 4.08
+   },
+   {
+    "w": "pulses",
+    "s": 4.08,
+    "e": 4.56
+   },
+   {
+    "w": "less",
+    "s": 4.56,
+    "e": 4.88
+   },
+   {
+    "w": "than",
+    "s": 4.88,
+    "e": 5.04
+   },
+   {
+    "w": "once",
+    "s": 5.04,
+    "e": 5.28
+   },
+   {
+    "w": "a",
+    "s": 5.28,
+    "e": 5.44
+   },
+   {
+    "w": "second,",
+    "s": 5.44,
+    "e": 6.08
+   },
+   {
+    "w": "far",
+    "s": 6.24,
+    "e": 6.48
+   },
+   {
+    "w": "below",
+    "s": 6.48,
+    "e": 6.8
+   },
+   {
+    "w": "the",
+    "s": 6.8,
+    "e": 6.96
+   },
+   {
+    "w": "safety",
+    "s": 6.96,
+    "e": 7.28
+   },
+   {
+    "w": "limit",
+    "s": 7.28,
+    "e": 7.6
+   },
+   {
+    "w": "of",
+    "s": 7.6,
+    "e": 7.76
+   },
+   {
+    "w": "three,",
+    "s": 7.76,
+    "e": 8.4
+   },
+   {
+    "w": "and",
+    "s": 8.48,
+    "e": 8.64
+   },
+   {
+    "w": "holds",
+    "s": 8.64,
+    "e": 8.88
+   },
+   {
+    "w": "steady",
+    "s": 8.88,
+    "e": 9.28
+   },
+   {
+    "w": "if",
+    "s": 9.28,
+    "e": 9.52
+   },
+   {
+    "w": "you",
+    "s": 9.52,
+    "e": 9.6
+   },
+   {
+    "w": "reduce",
+    "s": 9.6,
+    "e": 10
+   },
+   {
+    "w": "motion.",
+    "s": 10,
+    "e": 10.4
+   },
+   {
+    "w": "Focus",
+    "s": 11.142,
+    "e": 11.542
+   },
+   {
+    "w": "moves",
+    "s": 11.542,
+    "e": 11.942
+   },
+   {
+    "w": "to",
+    "s": 11.942,
+    "e": 12.102
+   },
+   {
+    "w": "Dismiss,",
+    "s": 12.102,
+    "e": 12.902
+   },
+   {
+    "w": "then",
+    "s": 13.142,
+    "e": 13.302
+   },
+   {
+    "w": "back",
+    "s": 13.302,
+    "e": 13.542
+   },
+   {
+    "w": "to",
+    "s": 13.542,
+    "e": 13.702
+   },
+   {
+    "w": "where",
+    "s": 13.702,
+    "e": 13.942
+   },
+   {
+    "w": "you",
+    "s": 13.942,
+    "e": 14.022
+   },
+   {
+    "w": "were.",
+    "s": 14.022,
+    "e": 14.662
+   },
+   {
+    "w": "All",
+    "s": 14.982,
+    "e": 15.302
+   },
+   {
+    "w": "text",
+    "s": 15.302,
+    "e": 15.622
+   },
+   {
+    "w": "meets",
+    "s": 15.622,
+    "e": 15.942
+   },
+   {
+    "w": "WCAG",
+    "s": 16.342,
+    "e": 17.062
+   },
+   {
+    "w": "AAA",
+    "s": 17.062,
+    "e": 18.022
+   },
+   {
+    "w": "contrast,",
+    "s": 17.862,
+    "e": 17.942
+   },
+   {
+    "w": "and",
+    "s": 17.942,
+    "e": 18.022
+   },
+   {
+    "w": "a",
+    "s": 18.022,
+    "e": 18.822
+   },
+   {
+    "w": "script",
+    "s": 18.902,
+    "e": 19.222
+   },
+   {
+    "w": "checks",
+    "s": 19.222,
+    "e": 19.542
+   },
+   {
+    "w": "every",
+    "s": 19.542,
+    "e": 19.942
+   },
+   {
+    "w": "colour",
+    "s": 19.942,
+    "e": 20.262
+   },
+   {
+    "w": "pair.",
+    "s": 20.262,
+    "e": 20.982
+   }
+  ]
+ },
+ {
+  "id": "tech",
+  "voice": "narrator",
+  "text": "Under the hood, Ring signs every webhook. Herald verifies the HMAC signature on the raw bytes before parsing anything, drops duplicate deliveries, and streams each alert to every screen over server-sent events.",
+  "duration": 13.36,
+  "words": [
+   {
+    "w": "Under",
+    "s": 0,
+    "e": 0.32
+   },
+   {
+    "w": "the",
+    "s": 0.32,
+    "e": 0.48
+   },
+   {
+    "w": "hood,",
+    "s": 0.48,
+    "e": 0.96
+   },
+   {
+    "w": "Ring",
+    "s": 0.96,
+    "e": 1.28
+   },
+   {
+    "w": "signs",
+    "s": 1.28,
+    "e": 1.68
+   },
+   {
+    "w": "every",
+    "s": 1.68,
+    "e": 2.08
+   },
+   {
+    "w": "webhook.",
+    "s": 2.08,
+    "e": 2.96
+   },
+   {
+    "w": "Herald",
+    "s": 2.8,
+    "e": 3.52
+   },
+   {
+    "w": "verifies",
+    "s": 3.52,
+    "e": 4.08
+   },
+   {
+    "w": "the",
+    "s": 4.08,
+    "e": 4.24
+   },
+   {
+    "w": "HMAC",
+    "s": 4.4,
+    "e": 4.72
+   },
+   {
+    "w": "signature",
+    "s": 4.72,
+    "e": 5.2
+   },
+   {
+    "w": "on",
+    "s": 5.2,
+    "e": 5.44
+   },
+   {
+    "w": "the",
+    "s": 5.44,
+    "e": 5.6
+   },
+   {
+    "w": "raw",
+    "s": 5.6,
+    "e": 5.84
+   },
+   {
+    "w": "bytes",
+    "s": 5.84,
+    "e": 6.16
+   },
+   {
+    "w": "before",
+    "s": 6.16,
+    "e": 6.56
+   },
+   {
+    "w": "parsing",
+    "s": 6.56,
+    "e": 6.96
+   },
+   {
+    "w": "anything,",
+    "s": 6.96,
+    "e": 7.76
+   },
+   {
+    "w": "drops",
+    "s": 8,
+    "e": 8.4
+   },
+   {
+    "w": "duplicate",
+    "s": 8.4,
+    "e": 8.88
+   },
+   {
+    "w": "deliveries,",
+    "s": 8.88,
+    "e": 9.68
+   },
+   {
+    "w": "and",
+    "s": 9.68,
+    "e": 9.92
+   },
+   {
+    "w": "streams",
+    "s": 9.92,
+    "e": 10.24
+   },
+   {
+    "w": "each",
+    "s": 10.24,
+    "e": 10.56
+   },
+   {
+    "w": "alert",
+    "s": 10.56,
+    "e": 10.96
+   },
+   {
+    "w": "to",
+    "s": 10.96,
+    "e": 11.12
+   },
+   {
+    "w": "every",
+    "s": 11.12,
+    "e": 11.44
+   },
+   {
+    "w": "screen",
+    "s": 11.44,
+    "e": 11.84
+   },
+   {
+    "w": "over",
+    "s": 11.84,
+    "e": 12.16
+   },
+   {
+    "w": "server-sent",
+    "s": 12.32,
+    "e": 12.8
+   },
+   {
+    "w": "events.",
+    "s": 12.8,
+    "e": 13.2
+   }
+  ]
+ },
+ {
+  "id": "ringkit",
+  "voice": "narrator",
+  "text": "The Developer Playground can't send webhooks, so we built ring-kit: an open-source Ring client with a signed event simulator. Every test event takes Herald's real verification path. 52 tests back it up, and we logged 11 friction points for the Ring team.",
+  "duration": 16.36,
+  "words": [
+   {
+    "w": "The",
+    "s": 0,
+    "e": 0.24
+   },
+   {
+    "w": "Developer",
+    "s": 0.24,
+    "e": 0.64
+   },
+   {
+    "w": "Playground",
+    "s": 0.64,
+    "e": 1.28
+   },
+   {
+    "w": "can't",
+    "s": 1.28,
+    "e": 1.68
+   },
+   {
+    "w": "send",
+    "s": 1.68,
+    "e": 1.92
+   },
+   {
+    "w": "webhooks,",
+    "s": 1.92,
+    "e": 2.8
+   },
+   {
+    "w": "so",
+    "s": 2.8,
+    "e": 2.96
+   },
+   {
+    "w": "we",
+    "s": 2.96,
+    "e": 3.12
+   },
+   {
+    "w": "built",
+    "s": 3.12,
+    "e": 3.44
+   },
+   {
+    "w": "ring-kit:",
+    "s": 3.552,
+    "e": 3.984
+   },
+   {
+    "w": "an",
+    "s": 3.984,
+    "e": 4.416
+   },
+   {
+    "w": "open-source",
+    "s": 4.416,
+    "e": 4.848
+   },
+   {
+    "w": "Ring",
+    "s": 4.848,
+    "e": 5.28
+   },
+   {
+    "w": "client",
+    "s": 5.28,
+    "e": 5.6
+   },
+   {
+    "w": "with",
+    "s": 5.6,
+    "e": 5.92
+   },
+   {
+    "w": "a",
+    "s": 5.92,
+    "e": 6.24
+   },
+   {
+    "w": "signed",
+    "s": 6.133,
+    "e": 6.347
+   },
+   {
+    "w": "event",
+    "s": 6.347,
+    "e": 6.56
+   },
+   {
+    "w": "simulator.",
+    "s": 6.56,
+    "e": 7.84
+   },
+   {
+    "w": "Every",
+    "s": 8.08,
+    "e": 8.4
+   },
+   {
+    "w": "test",
+    "s": 8.4,
+    "e": 8.72
+   },
+   {
+    "w": "event",
+    "s": 8.72,
+    "e": 9.04
+   },
+   {
+    "w": "takes",
+    "s": 9.04,
+    "e": 9.28
+   },
+   {
+    "w": "Herald's",
+    "s": 9.377,
+    "e": 9.715
+   },
+   {
+    "w": "real",
+    "s": 9.715,
+    "e": 10.115
+   },
+   {
+    "w": "verification",
+    "s": 10.115,
+    "e": 10.675
+   },
+   {
+    "w": "path.",
+    "s": 10.675,
+    "e": 11.475
+   },
+   {
+    "w": "52",
+    "s": 11.435,
+    "e": 12.195
+   },
+   {
+    "w": "tests",
+    "s": 12.195,
+    "e": 12.595
+   },
+   {
+    "w": "back",
+    "s": 12.595,
+    "e": 12.915
+   },
+   {
+    "w": "it",
+    "s": 12.915,
+    "e": 13.075
+   },
+   {
+    "w": "up,",
+    "s": 13.075,
+    "e": 13.555
+   },
+   {
+    "w": "and",
+    "s": 13.635,
+    "e": 13.715
+   },
+   {
+    "w": "we",
+    "s": 13.715,
+    "e": 13.955
+   },
+   {
+    "w": "logged",
+    "s": 13.955,
+    "e": 14.275
+   },
+   {
+    "w": "11",
+    "s": 14.275,
+    "e": 14.675
+   },
+   {
+    "w": "friction",
+    "s": 14.675,
+    "e": 15.075
+   },
+   {
+    "w": "points",
+    "s": 15.075,
+    "e": 15.395
+   },
+   {
+    "w": "for",
+    "s": 15.395,
+    "e": 15.635
+   },
+   {
+    "w": "the",
+    "s": 15.635,
+    "e": 15.715
+   },
+   {
+    "w": "Ring",
+    "s": 15.715,
+    "e": 16.035
+   },
+   {
+    "w": "team.",
+    "s": 16.035,
+    "e": 16.355
+   }
+  ]
+ },
+ {
+  "id": "outro",
+  "voice": "narrator",
+  "text": "Herald. Because everyone deserves to know who's at the door.",
+  "duration": 4.04,
+  "words": [
+   {
+    "w": "Herald.",
+    "s": 0.72,
+    "e": 1.2
+   },
+   {
+    "w": "Because",
+    "s": 1.2,
+    "e": 1.52
+   },
+   {
+    "w": "everyone",
+    "s": 1.52,
+    "e": 2.08
+   },
+   {
+    "w": "deserves",
+    "s": 2.08,
+    "e": 2.56
+   },
+   {
+    "w": "to",
+    "s": 2.56,
+    "e": 2.88
+   },
+   {
+    "w": "know",
+    "s": 2.88,
+    "e": 3.04
+   },
+   {
+    "w": "who's",
+    "s": 3.04,
+    "e": 3.36
+   },
+   {
+    "w": "at",
+    "s": 3.36,
+    "e": 3.52
+   },
+   {
+    "w": "the",
+    "s": 3.52,
+    "e": 3.68
+   },
+   {
+    "w": "door.",
+    "s": 3.68,
+    "e": 4
+   }
+  ]
+ }
+]

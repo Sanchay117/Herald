@@ -1,0 +1,26 @@
+{
+  "name": "herald-video",
+  "private": true,
+  "type": "module",
+  "description": "Demo video for Herald: real app recordings, Deepgram narration and Remotion motion graphics",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts Demo out/herald-demo.mp4",
+    "still": "remotion still src/index.ts"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.534",
+    "@remotion/google-fonts": "4.0.534",
+    "@remotion/media-utils": "4.0.534",
+    "@remotion/paths": "4.0.534",
+    "@remotion/transitions": "4.0.534",
+    "playwright": "1.54.2",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.534"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "typescript": "5.9.3"
+  }
+}

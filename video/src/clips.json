@@ -1,0 +1,105 @@
+{
+ "focus-desk": {
+  "seconds": 5.805,
+  "width": 1920,
+  "height": 1080,
+  "marks": [
+   {
+    "name": "key:Tab",
+    "t": 0.501
+   },
+   {
+    "name": "key:Enter",
+    "t": 1.7
+   },
+   {
+    "name": "key:Enter",
+    "t": 4
+   }
+  ]
+ },
+ "live-ui": {
+  "seconds": 38.079,
+  "width": 1920,
+  "height": 1080,
+  "marks": [
+   {
+    "name": "click",
+    "t": 1.669
+   },
+   {
+    "name": "live",
+    "t": 4.884
+   },
+   {
+    "name": "ended",
+    "t": 36.374
+   }
+  ]
+ },
+ "priority-desk": {
+  "seconds": 8.922,
+  "width": 1920,
+  "height": 1080,
+  "marks": [
+   {
+    "name": "vehicle",
+    "t": 2.74
+   },
+   {
+    "name": "package",
+    "t": 5.721
+   }
+  ]
+ },
+ "setup-desk": {
+  "seconds": 11.58,
+  "width": 1920,
+  "height": 1080,
+  "marks": [
+   {
+    "name": "start",
+    "t": 9.379
+   }
+  ]
+ },
+ "wall-laptop": {
+  "seconds": 9.949,
+  "width": 1920,
+  "height": 1200,
+  "marks": [
+   {
+    "name": "event",
+    "t": 1.35
+   }
+  ]
+ },
+ "wall-phone": {
+  "seconds": 9.949,
+  "width": 1170,
+  "height": 2532,
+  "marks": [
+   {
+    "name": "event",
+    "t": 1.35
+   }
+  ]
+ },
+ "wall-tv": {
+  "seconds": 9.949,
+  "width": 1920,
+  "height": 1080,
+  "marks": [
+   {
+    "name": "event",
+    "t": 1.35
+   }
+  ]
+ },
+ "live-stream": {
+  "seconds": 20.466,
+  "width": 1280,
+  "height": 720,
+  "marks": []
+ }
+}

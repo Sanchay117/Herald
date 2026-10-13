@@ -1,0 +1,243 @@
+{
+ "fps": 30,
+ "total": 4873,
+ "scenes": [
+  {
+   "id": "cold",
+   "enter": "cut",
+   "overlap": 0,
+   "from": 0,
+   "duration": 628,
+   "parts": [
+    {
+     "kind": "sfx",
+     "id": "chime",
+     "at": 21,
+     "len": 57,
+     "caption": "[Doorbell chimes]"
+    },
+    {
+     "kind": "line",
+     "id": "cold-deaf",
+     "at": 82,
+     "len": 112
+    },
+    {
+     "kind": "line",
+     "id": "cold-blind",
+     "at": 242,
+     "len": 77
+    },
+    {
+     "kind": "line",
+     "id": "cold-alert",
+     "at": 329,
+     "len": 91
+    },
+    {
+     "kind": "line",
+     "id": "cold-deafblind",
+     "at": 451,
+     "len": 90
+    },
+    {
+     "kind": "sfx",
+     "id": "buzz-doorbell",
+     "at": 551,
+     "len": 44,
+     "caption": "[Phone vibrates: long, long]"
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "enter": "cut",
+   "overlap": 0,
+   "from": 628,
+   "duration": 158,
+   "parts": [
+    {
+     "kind": "sfx",
+     "id": "reveal",
+     "at": 0,
+     "len": 12
+    },
+    {
+     "kind": "line",
+     "id": "title",
+     "at": 23,
+     "len": 90
+    }
+   ]
+  },
+  {
+   "id": "why",
+   "enter": "zoom",
+   "overlap": 16,
+   "from": 770,
+   "duration": 507,
+   "parts": [
+    {
+     "kind": "line",
+     "id": "why",
+     "at": 14,
+     "len": 293
+    },
+    {
+     "kind": "line",
+     "id": "promise",
+     "at": 330,
+     "len": 146
+    }
+   ]
+  },
+  {
+   "id": "setup",
+   "enter": "slide",
+   "overlap": 18,
+   "from": 1259,
+   "duration": 308,
+   "parts": [
+    {
+     "kind": "line",
+     "id": "setup",
+     "at": 18,
+     "len": 251
+    }
+   ]
+  },
+  {
+   "id": "wall",
+   "enter": "iris",
+   "overlap": 22,
+   "from": 1545,
+   "duration": 636,
+   "parts": [
+    {
+     "kind": "sfx",
+     "id": "chime",
+     "at": 24,
+     "len": 33,
+     "caption": "[Doorbell chimes]"
+    },
+    {
+     "kind": "line",
+     "id": "cold-alert",
+     "at": 57,
+     "len": 91
+    },
+    {
+     "kind": "line",
+     "id": "wall",
+     "at": 162,
+     "len": 444
+    }
+   ]
+  },
+  {
+   "id": "rhythm",
+   "enter": "slide",
+   "overlap": 18,
+   "from": 2163,
+   "duration": 247,
+   "parts": [
+    {
+     "kind": "line",
+     "id": "rhythm",
+     "at": 15,
+     "len": 205
+    }
+   ]
+  },
+  {
+   "id": "priority",
+   "enter": "push",
+   "overlap": 14,
+   "from": 2396,
+   "duration": 283,
+   "parts": [
+    {
+     "kind": "line",
+     "id": "priority",
+     "at": 12,
+     "len": 214
+    }
+   ]
+  },
+  {
+   "id": "live",
+   "enter": "zoom",
+   "overlap": 16,
+   "from": 2663,
+   "duration": 326,
+   "parts": [
+    {
+     "kind": "line",
+     "id": "live",
+     "at": 30,
+     "len": 257
+    }
+   ]
+  },
+  {
+   "id": "safe",
+   "enter": "fade",
+   "overlap": 15,
+   "from": 2974,
+   "duration": 678,
+   "parts": [
+    {
+     "kind": "line",
+     "id": "safe",
+     "at": 18,
+     "len": 630
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "enter": "slide",
+   "overlap": 18,
+   "from": 3634,
+   "duration": 455,
+   "parts": [
+    {
+     "kind": "line",
+     "id": "tech",
+     "at": 18,
+     "len": 401
+    }
+   ]
+  },
+  {
+   "id": "ringkit",
+   "enter": "push",
+   "overlap": 14,
+   "from": 4075,
+   "duration": 545,
+   "parts": [
+    {
+     "kind": "line",
+     "id": "ringkit",
+     "at": 18,
+     "len": 491
+    }
+   ]
+  },
+  {
+   "id": "outro",
+   "enter": "fade",
+   "overlap": 15,
+   "from": 4605,
+   "duration": 268,
+   "parts": [
+    {
+     "kind": "line",
+     "id": "outro",
+     "at": 27,
+     "len": 121
+    }
+   ]
+  }
+ ]
+}
