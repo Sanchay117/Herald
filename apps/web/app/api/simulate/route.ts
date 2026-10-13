@@ -31,10 +31,15 @@ export async function POST(request: NextRequest) {
 
   const target = await simulationTarget()
   const payload = buildWebhookPayload({ ...EVENTS[name as SimulatedEventName], ...target })
+  // Next builds the origin from the port this server listens on but takes the scheme from
+  // X-Forwarded-Proto, so behind an HTTPS proxy (Render, for one) it reads https://localhost:PORT.
+  // The server itself only speaks HTTP.
+  const url = new URL('/api/webhook', request.nextUrl.origin)
+  url.protocol = 'http:'
 
   try {
     const res = await sendSimulatedWebhook({
-      url: new URL('/api/webhook', request.nextUrl.origin).toString(),
+      url: url.toString(),
       signingKey: key,
       payload,
       headers: { 'X-Herald-Simulated': '1' },
